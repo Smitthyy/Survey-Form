@@ -1,0 +1,153 @@
+<doctype! html>
+<header>
+    <link rel="stylesheet" type="text/css" href="./resources/stylesheet.css">
+
+    <h1 id="title">World of Warcraft Survey Form</h1>
+    <p id="description">A short user experience survey</p>
+</header>
+    <form id="survey-form">
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            class="form-control"
+            placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input 
+            type="email"
+            id="email"
+            name="email" 
+            class="form-control"
+            placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age <span id="clue">(optional)</span></label>
+            <input type="number" 
+            id="number" 
+            name="age" 
+            min="10" 
+            max="99" 
+            class="form-control" 
+            placeholder="Age">
+        </div>
+
+        <div class="form-group">
+            <p>Which option best describes you?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="learner">Full time learner</option>
+                <option value="other">Other</option>
+                <option value="preferNo">Prefer not to say</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend World of Warcraft to a friend</p>
+            <label>
+                <input 
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+                />Definitely
+            </label>
+
+            <label>
+                <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+                />Maybe
+            </label>
+
+            <label>
+                <input
+                name="user-recommend"
+                value="no"
+                type="radio"
+                class="input-radio"
+                />No
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>What is your favourite feature of World of Warcraft?</p>
+            <select id="dropdown" name="most-like" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="questing">Questing</option>
+                <option value="mythics">Mythic dungeons</option>
+                <option value="raids">Raiding</option>
+                <option value="pvp">PvP</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>What would you most like to see improved?<span class="clue"> (Check all that apply)</span></p>
+            <label>
+                <input
+                name="prefer"
+                value="ease-of-gearing"
+                type="checkbox"
+                class="input-checkbox"
+                />Easier gearing for alts
+            </label>
+
+            <label>
+                <input
+                name="prefer"
+                value="faster-levelling"
+                type="checkbox"
+                class="input-checkbox"
+                />Faster levelling for alts
+            </label>
+
+            <label>
+                <input
+                name="prefer"
+                value="more-sociable"
+                type="checkbox"
+                class="input-checkbox"
+                />More sociable environment
+            </label>
+
+            <label>
+                <input
+                name="prefer"
+                value="easier-raiding"
+                type="checkbox"
+                class="input-checkbox"
+                />Easier to get into non LFR raids
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+            ></textarea>
+        </div>
+
+        <div class="form-group">
+            <button 
+            type="submit"
+            id="submit"
+            class="submit-button">
+            Submit
+            </button>
+        </div>
+    </form>

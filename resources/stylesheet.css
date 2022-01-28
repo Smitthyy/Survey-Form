@@ -1,12 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
-
-body {
+* {
     font-family: 'Poppins', sans-serif;
 }
 
+#title {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#description {
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+#survey-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255, 0.30);
+}
+
 .form-group {
-    margin: 0 auto 1.25rem auto;
-    padding: 0.25rem;
-  }
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5pt;
+    font-weight: bold;
+    
+}
+
+body {
+    background-image: url(map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
